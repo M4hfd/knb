@@ -20,33 +20,13 @@ for player in range(10):
     if comp == 3:
         print("Ход оппонента - бумага")
 
-    if comp == 1 and player == 1:
+    if comp == 1 and player == 1 or comp == 2 and player == 2 or comp == 3 and player == 3:
         print("Ничья!")
         print("Твой счет: " + str(count))
-    if comp == 2 and player == 2:
-        print("Ничья!")
-        print("Твой счет: " + str(count))
-    if comp == 3 and player == 3:
-        print("Ничья!")
-        print("Твой счет: " + str(count))
-    if comp == 1 and player == 2:
+    if comp == 1 and player == 2 or comp == 1 and player == 3 or comp == 2 and player == 3:
         print("Вы проиграли!")
         print("Твой счет: " + str(count))
-    if comp == 2 and player == 1:
-        print("Вы выйграли!")
-        count += 1
-        print("Твой счет: " + str(count))
-    if comp == 3 and player == 1:
-        print("Вы выйграли!")
-        count += 1
-        print("Твой счет: " + str(count))
-    if comp == 1 and player == 3:
-        print("Вы проиграли!")
-        print("Твой счет: " + str(count))
-    if comp == 2 and player == 3:
-        print("Вы проиграли!")
-        print("Твой счет: " + str(count))
-    if comp == 3 and player == 2:
+    if comp == 2 and player == 1 or comp == 3 and player == 1 or comp == 3 and player == 2:
         print("Вы выйграли!")
         count += 1
         print("Твой счет: " + str(count))
