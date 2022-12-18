@@ -20,7 +20,7 @@ for player in range(10):
     if comp == 3:
         print("Ход оппонента - бумага")
 
-    if comp == 1 and player == 1 or comp == 2 and player == 2 or comp == 3 and player == 3:
+    if comp == player:
         print("Ничья!")
         print("Твой счет: " + str(count))
     if comp == 1 and player == 2 or comp == 1 and player == 3 or comp == 2 and player == 3:
